@@ -1,0 +1,94 @@
+# Docker
+# Build and push an image to Azure Container Registry
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- develop
+
+resources:
+- repo: self
+
+variables:
+  # Container registry service connection established during pipeline creation
+  dockerRegistryServiceConnection: 'd259fb21-0e4f-4cc8-a111-9ec61fa32842'
+  imageRepository: 'ddotmpspermitapi'
+  containerRegistry: 'ddotmpsdevcontainerregistry.azurecr.io'
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
+  tag: '$(Build.BuildId)'
+
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+
+stages:
+  - stage: Sonar
+    displayName: Sonarqube analysis stage
+    jobs:
+      - job: Sonar
+        displayName: Build the project for sonar analysis
+        pool:
+          name: DdotMpsAgentPoolDev
+          demands:
+            - Agent.Name -equals mps-temp-ubuntu-2
+            - Agent.Version -gtVersion 3.238.0
+        steps:
+          - task: SonarQubePrepare@6
+            inputs:
+              SonarQube: 'mysonarqube_project'
+              scannerMode: 'CLI'
+              configMode: 'manual'
+              cliProjectKey: 'ddot-mps-permit-api'
+              cliProjectName: "ddot-mps-permit-api"
+              extraProperties: |
+                sonar.verbose=true
+          # Run Code Analysis task
+          - task: SonarQubeAnalyze@6
+            inputs:
+              jdkversion: 'JAVA_HOME_17_X64'
+          # Publish Quality Gate Result task
+          - task: SonarQubePublish@6
+            inputs:
+              pollingTimeoutSec: '300'
+
+  - stage: Build
+    displayName: Build and push stage
+    jobs:
+      - job: Build
+        displayName: Build
+        pool:
+          name: DdotMpsAgentPoolDev
+          demands:
+            - Agent.Name -equals mps-temp-ubuntu-2
+        steps:
+        - task: Docker@2
+          displayName: Build and push an image to container registry
+          inputs:
+            command: buildAndPush
+            repository: $(imageRepository)
+            dockerfile: $(dockerfilePath)
+            containerRegistry: $(dockerRegistryServiceConnection)
+            tags: |
+              $(tag)
+        - script: |
+              echo "Deleting Docker images in the build agent for free up space"
+              sudo docker system prune -f -a --volumes
+          displayName: 'Remove Docker Images in the build agent'
+
+
+  - stage: Deploy
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
+    displayName: Deploy to Azure Container Apps
+    jobs:
+      - job: Deploy
+        displayName: Deploy Job
+        pool:
+          name: DdotMpsAgentPoolDev
+          demands:
+            - Agent.Name -equals mps-temp-ubuntu-2
+        steps:
+          - task: AzureContainerApps@1
+            inputs:
+              azureSubscription: 'ddot_mps_azure_devops_service_connection'
+              containerAppName: 'ddot-mps-dev-permit-api-app'
+              resourceGroup: 'ddot-mps-dev-rg'
+              imageToDeploy: 'ddotmpsdevcontainerregistry.azurecr.io/ddotmpspermitapi:$(tag)'
+

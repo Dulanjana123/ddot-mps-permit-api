@@ -1,0 +1,674 @@
+[
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.EwrController",
+    "Method": "Create",
+    "RelativePath": "api/v1/Ewr",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ewrNewRequest",
+        "Type": "DDOT.MPS.Permit.Model.Request.EwrCreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.EwrController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/Ewr/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.EwrController",
+    "Method": "UpdateEwrAssigning",
+    "RelativePath": "api/v1/Ewr/assign/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ewrAssigningDto",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.EwrAssigningDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.EwrController",
+    "Method": "UpdateEwrBulkAssigning",
+    "RelativePath": "api/v1/Ewr/assign/bulk",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ewrBulkAssigningDto",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.EwrBulkAssigningDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.EwrController",
+    "Method": "GetAssigningInfo",
+    "RelativePath": "api/v1/Ewr/assigning-info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.EwrController",
+    "Method": "CloseEwr",
+    "RelativePath": "api/v1/Ewr/close/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ewrCloseDto",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.EwrCloseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.EwrController",
+    "Method": "GetQuickDashboardData",
+    "RelativePath": "api/v1/Ewr/dashboard",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DDOT.MPS.Permit.Model.Request.DateRangeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.EwrController",
+    "Method": "GetIndexFiltersInfo",
+    "RelativePath": "api/v1/Ewr/index-filters-info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.EwrController",
+    "Method": "GetEWRByLocation",
+    "RelativePath": "api/v1/Ewr/location",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "locationFilterRequest",
+        "Type": "DDOT.MPS.Permit.Model.Request.EwrLocationFilterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.EwrController",
+    "Method": "GetPaginatedList",
+    "RelativePath": "api/v1/Ewr/paginated",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DDOT.MPS.Permit.Model.Request.EwrPaginatedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.InspectionController",
+    "Method": "CreateInspection",
+    "RelativePath": "api/v1/Inspection",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inspectionDto",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.InspectionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.InspectionController",
+    "Method": "UpdateInspection",
+    "RelativePath": "api/v1/Inspection/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "inspectionDto",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.InspectionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.InspectionController",
+    "Method": "GetInspectionById",
+    "RelativePath": "api/v1/Inspection/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.InspectionController",
+    "Method": "GetPaginatedList",
+    "RelativePath": "api/v1/Inspection/paginated",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DDOT.MPS.Permit.Model.Request.InspectionPaginatedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.LocationController",
+    "Method": "Get",
+    "RelativePath": "api/v1/Location/mar-v2-get-details",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.LocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Permit.Model.Response.BaseResponse\u00601[[DDOT.MPS.Permit.Model.Response.LocationResponseDto[], DDOT.MPS.Permit.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.LocationController",
+    "Method": "GetBlockDetails",
+    "RelativePath": "api/v1/Location/mar-v2-get-details/{fullBlock}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fullBlock",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Permit.Model.Response.BaseResponse\u00601[[DDOT.MPS.Permit.Model.Response.BlockAddressResponseDto[], DDOT.MPS.Permit.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.LocationController",
+    "Method": "GetReverseGeocodingLocationDetail",
+    "RelativePath": "api/v1/Location/mar-v2-reverse-geocoding",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "locationRequest",
+        "Type": "DDOT.MPS.Permit.Model.Request.LocationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Permit.Model.Response.BaseResponse\u00601[[DDOT.MPS.Permit.Model.Response.ReverseGeoCodeSslResponseDto, DDOT.MPS.Permit.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.MeetingSettingsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/MeetingSettings/{meetingTypeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "meetingTypeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Permit.Model.Response.BaseResponse\u00601[[DDOT.MPS.Permit.Model.Dtos.PdrmMeetingConstraintsDto, DDOT.MPS.Permit.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.MeetingSettingsController",
+    "Method": "CreateOrUpdateAvailableTimeBlocks",
+    "RelativePath": "api/v1/MeetingSettings/available-time-blocks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "meetingsSettingsDtoReqDto",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.TimeBlocksSelectionDtoReqDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Permit.Model.Response.BaseResponse\u00601[[DDOT.MPS.Permit.Model.Dtos.TimeBlocksSelectionDtoReqDto, DDOT.MPS.Permit.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.MeetingSettingsController",
+    "Method": "CreateOrUpdateCalendarDatesSelectionData",
+    "RelativePath": "api/v1/MeetingSettings/calendar-dates-selection",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "meetingsSettingsReqDto",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.CalendarDatesSelectionReqDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Permit.Model.Response.BaseResponse\u00601[[DDOT.MPS.Permit.Model.Dtos.CalendarDatesSelectionReqDto, DDOT.MPS.Permit.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.PdrmController",
+    "Method": "CreatePdrm",
+    "RelativePath": "api/v1/Pdrm",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pdrmCreationRequest",
+        "Type": "DDOT.MPS.Permit.Model.Request.PdrmCreationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Permit.Model.Response.BaseResponse\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.PdrmController",
+    "Method": "GetPdrm",
+    "RelativePath": "api/v1/Pdrm",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Permit.Model.Response.BaseResponse\u00601[[DDOT.MPS.Permit.Model.Dtos.PdrmDto, DDOT.MPS.Permit.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.PdrmController",
+    "Method": "UpdatePdrm",
+    "RelativePath": "api/v1/Pdrm",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pdrmUpdateRequest",
+        "Type": "DDOT.MPS.Permit.Model.Request.PdrmUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Permit.Model.Response.BaseResponse\u00601[[DDOT.MPS.Permit.Model.Dtos.PdrmDto, DDOT.MPS.Permit.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.ProjectController",
+    "Method": "Create",
+    "RelativePath": "api/v1/Project",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.ProjectAddDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.ProjectController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/Project/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.ProjectController",
+    "Method": "Update",
+    "RelativePath": "api/v1/Project/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.ProjectUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.ProjectController",
+    "Method": "GetPaginated",
+    "RelativePath": "api/v1/Project/paginated",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DDOT.MPS.Permit.Model.Request.ProjectPaginatedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.SwoController",
+    "Method": "CreateSwo",
+    "RelativePath": "api/v1/Swo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "swoViolationDto",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.SwoViolationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.SwoController",
+    "Method": "UpdateSwo",
+    "RelativePath": "api/v1/Swo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "swoViolationDto",
+        "Type": "DDOT.MPS.Permit.Model.Dtos.SwoViolationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.SwoController",
+    "Method": "GetViolationTypes",
+    "RelativePath": "api/v1/Swo/violation-types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.TestController",
+    "Method": "Create",
+    "RelativePath": "api/v1/Test",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.TestController",
+    "Method": "Update",
+    "RelativePath": "api/v1/Test",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.TestController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/Test",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.TestController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/Test/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.TestController",
+    "Method": "CheckConnectionString",
+    "RelativePath": "api/v1/Test/check-connection-string",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Permit.Api.Controllers.TestController",
+    "Method": "GetPaginatedList",
+    "RelativePath": "api/v1/Test/paginated",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

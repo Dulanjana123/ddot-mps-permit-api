@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "t5BWfkIfGv8=",
+  "success": true,
+  "projectFilePath": "C:\\Dulanjana\\DevOps\\DDOT MPS\\ddot-mps-permit-api\\DDOT.MPS.Permit.Core\\DDOT.MPS.Permit.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\gfoidl.analyzers\\0.2.0\\gfoidl.analyzers.0.2.0.nupkg.sha512",
+    "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\gfoidl.base64\\1.1.1\\gfoidl.base64.1.1.1.nupkg.sha512",
+    "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\jsonwebtoken\\1.9.4\\jsonwebtoken.1.9.4.nupkg.sha512",
+    "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.6.2\\microsoft.identitymodel.abstractions.7.6.2.nupkg.sha512",
+    "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.6.2\\microsoft.identitymodel.jsonwebtokens.7.6.2.nupkg.sha512",
+    "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\microsoft.identitymodel.logging\\7.6.2\\microsoft.identitymodel.logging.7.6.2.nupkg.sha512",
+    "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.6.2\\microsoft.identitymodel.tokens.7.6.2.nupkg.sha512",
+    "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.6.2\\system.identitymodel.tokens.jwt.7.6.2.nupkg.sha512",
+    "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\uaparser.core\\4.0.4\\uaparser.core.4.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

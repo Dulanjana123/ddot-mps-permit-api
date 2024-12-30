@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\DDOT.MPS.Permit.Api.props" />
+</Project>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pUl8WYTCPfH25lLwEUWjlDEaOUavmeJpA5y7OjF0PdA=",
+  "Source": "DDOT.MPS.Permit.Api",
+  "BasePath": "_content/DDOT.MPS.Permit.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

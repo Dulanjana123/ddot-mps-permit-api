@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DDOT.MPS.Permit.Api.props" />
+</Project>

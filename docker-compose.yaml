@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ddot-mps-permit-api
+    container_name: ddot-mps-permit-api-container
+    ports:
+      - "3500:8080"
+
+
+volumes:
+  web-root:
+    driver: local

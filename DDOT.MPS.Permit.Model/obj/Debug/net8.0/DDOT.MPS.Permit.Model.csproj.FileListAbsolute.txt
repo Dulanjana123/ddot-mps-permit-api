@@ -1,0 +1,16 @@
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\bin\Debug\net8.0\DDOT.MPS.Permit.Model.deps.json
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\bin\Debug\net8.0\DDOT.MPS.Permit.Model.dll
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\bin\Debug\net8.0\DDOT.MPS.Permit.Model.pdb
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\bin\Debug\net8.0\DDOT.MPS.Permit.Core.dll
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\bin\Debug\net8.0\DDOT.MPS.Permit.Core.pdb
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\DDOT.MPS.Permit.Model.csproj.AssemblyReference.cache
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\DDOT.MPS.Permit.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\DDOT.MPS.Permit.Model.AssemblyInfoInputs.cache
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\DDOT.MPS.Permit.Model.AssemblyInfo.cs
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\DDOT.MPS.Permit.Model.csproj.CoreCompileInputs.cache
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\DDOT.MPS.Permit.Model.sourcelink.json
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\DDOT.MPS.E8CA6D56.Up2Date
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\DDOT.MPS.Permit.Model.dll
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\refint\DDOT.MPS.Permit.Model.dll
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\DDOT.MPS.Permit.Model.pdb
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-permit-api\DDOT.MPS.Permit.Model\obj\Debug\net8.0\ref\DDOT.MPS.Permit.Model.dll
